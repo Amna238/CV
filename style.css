@@ -1,0 +1,297 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0a0f16;
+      font-family: 'Inter', sans-serif;
+      padding: 2rem 1.5rem;
+      color: #eef2fb;
+    }
+
+    .resume-container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* DARK THEME resume card */
+    .resume-card {
+      background: #11161f;
+      border-radius: 32px;
+      box-shadow: 0 30px 50px -20px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 34% 66%;
+      transition: all 0.2s;
+      backdrop-filter: blur(0px);
+      border: 1px solid #2a2f3a;
+    }
+
+    /* LEFT SIDEBAR (dark elegant) */
+    .sidebar {
+      background: #0e131c;
+      padding: 2rem 1.8rem;
+      border-right: 1px solid #232833;
+    }
+
+    .name-title {
+      margin-bottom: 2rem;
+    }
+
+    .name {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      background: linear-gradient(135deg, #d9f0ec, #8bc9bd);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 0.4rem;
+    }
+
+    .role-badge {
+      font-size: 0.85rem;
+      font-weight: 600;
+      background: rgba(60, 130, 120, 0.25);
+      display: inline-block;
+      padding: 0.25rem 1rem;
+      border-radius: 40px;
+      color: #8bc9bd;
+      letter-spacing: 0.3px;
+      border: 0.5px solid rgba(90, 170, 150, 0.4);
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .section-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #87b9ae;
+      margin-bottom: 1rem;
+      border-left: 3.5px solid #3c8a7a;
+      padding-left: 12px;
+    }
+
+    .contact-info p {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.85rem;
+      margin-bottom: 0.9rem;
+      color: #bfd0db;
+      word-break: break-word;
+    }
+
+    .contact-info i {
+      width: 24px;
+      color: #5fa897;
+      font-size: 0.95rem;
+      text-align: center;
+    }
+
+    .skill-group {
+      margin-bottom: 1.3rem;
+    }
+
+    .skill-subtitle {
+      font-weight: 600;
+      font-size: 0.7rem;
+      letter-spacing: 0.5px;
+      color: #9cb5c2;
+      margin-bottom: 0.6rem;
+      text-transform: uppercase;
+    }
+
+    .skill-badge-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill-badge {
+      background: #1a212c;
+      padding: 0.25rem 0.9rem;
+      border-radius: 50px;
+      font-size: 0.72rem;
+      font-weight: 500;
+      color: #cde3e0;
+      transition: 0.1s;
+      border: 0.5px solid #2e3a44;
+    }
+
+    .lang-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      margin-bottom: 0.7rem;
+      border-bottom: 1px dashed #262e38;
+      padding-bottom: 0.3rem;
+    }
+
+    .lang-name {
+      font-weight: 500;
+      color: #d2e3ec;
+    }
+
+    /* RIGHT MAIN CONTENT (dark) */
+    .main-content {
+      background: #11161f;
+      padding: 2rem 2rem 2rem 2rem;
+    }
+
+    .right-section {
+      margin-bottom: 2rem;
+    }
+
+    .right-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #bde2da;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 2px solid #232a34;
+      padding-bottom: 0.55rem;
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.2px;
+    }
+
+    .right-title i {
+      color: #5fa897;
+    }
+
+    .about-text {
+      font-size: 0.9rem;
+      line-height: 1.55;
+      color: #cddee8;
+    }
+
+    .experience-item, .education-item {
+      margin-bottom: 1.7rem;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: baseline;
+      margin-bottom: 0.3rem;
+    }
+
+    .exp-title {
+      font-weight: 700;
+      font-size: 1rem;
+      color: #e0f0f0;
+    }
+
+    .exp-company {
+      font-weight: 500;
+      color: #7eb3a5;
+      font-size: 0.85rem;
+      margin: 0.2rem 0 0.2rem;
+    }
+
+    .exp-date {
+      font-size: 0.7rem;
+      background: #1b232e;
+      padding: 0.2rem 0.8rem;
+      border-radius: 30px;
+      color: #9bbfc1;
+      font-weight: 500;
+    }
+
+    .exp-desc {
+      font-size: 0.85rem;
+      color: #c0d2de;
+      line-height: 1.45;
+      margin-top: 0.6rem;
+      padding-left: 0rem;
+      list-style: none;
+    }
+
+    .exp-desc li {
+      margin-bottom: 0.5rem;
+      display: flex;
+      gap: 8px;
+    }
+
+    .exp-desc li i {
+      color: #5fa897;
+      font-size: 0.65rem;
+      margin-top: 0.25rem;
+      width: 16px;
+    }
+
+    .edu-degree {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #cbe8e2;
+    }
+
+    .edu-school {
+      font-size: 0.8rem;
+      color: #95b7c2;
+      margin: 0.2rem 0 0.1rem;
+    }
+
+    .edu-duration {
+      font-size: 0.7rem;
+      background: #1b232e;
+      padding: 0.2rem 0.7rem;
+      border-radius: 30px;
+      display: inline-block;
+      margin-top: 0.3rem;
+      color: #9bbfc1;
+      font-weight: 500;
+    }
+
+    hr {
+      margin: 0.8rem 0;
+      border: 0;
+      height: 1px;
+      background: #232b36;
+    }
+
+    .small-note {
+      font-size: 0.7rem;
+      color: #778e9c;
+      margin-top: 1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 780px) {
+      body {
+        padding: 1rem;
+      }
+      .resume-card {
+        grid-template-columns: 1fr;
+        border-radius: 28px;
+      }
+      .sidebar {
+        border-right: none;
+        border-bottom: 1px solid #232833;
+      }
+    }
+
+    /* Print styles (optional for browser printing) */
+    @media print {
+      body {
+        background: #0a0f16;
+        padding: 0;
+        margin: 0;
+      }
+      .resume-card {
+        box-shadow: none;
+        border-radius: 0;
+      }
+      .sidebar, .main-content {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
